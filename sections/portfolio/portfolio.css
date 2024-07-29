@@ -1,0 +1,122 @@
+/* Ajout d'une classe .portfolio__project-container pour contenir chaque projet */
+.portfolio__project-container {
+    width: 100%;
+  }
+  
+  .portfolio__categories {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn.cat__btn {
+    text-transform: capitalize;
+    transition: var(--transition);
+  }
+  
+  .btn.cat__btn:hover {
+    transform: translateY(0);
+  }
+  
+  .portfolio__projects {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  .card.portfolio__project {
+    animation: animateProject 800ms ease-in forwards;
+  }
+
+  .tech-stack{
+    /* background-color: orange; */
+    width: 80%;
+}
+
+.ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ul li{
+    list-style: circle;
+}
+  
+  @keyframes animateProject {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .portfolio__project-container {
+    width: 100%;
+  }
+  
+  .portfolio__project-image {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* Ratio d'aspect 16:9 pour éviter la déformation de l'image */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio__project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Affiche l'image en grand sans la déformer */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .portfolio__project p {
+    margin: 0.5rem 0 2rem;
+  }
+  
+  .portfolio__project-cta {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .portfolio__project:hover .btn.sm {
+    border-color: var(--color-white);
+  }
+  
+  .portfolio__project:hover .btn.sm.primary {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  
+  /* MEDIA QUERIES (tablets) */
+  @media screen and (max-width: 1024px) {
+    .portfolio__projects {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+  }
+  
+  /* MEDIA QUERIES (phones) */
+  @media screen and (max-width: 600px) {
+    .portfolio__categories {
+      gap: 0.6rem;
+    }
+  
+    .btn.cat__btn {
+      padding: 0.7rem 0.8rem;
+    }
+  
+    .portfolio__projects {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+  

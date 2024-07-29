@@ -1,0 +1,124 @@
+.leave-message-cont {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: var(--color-white);
+  background-image: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+}
+
+.leave-title{
+  color: white;
+}
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: var(--color-white);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  border: 1px solid var(--color-black);
+}
+
+.form-box .user-box {
+  position: relative;
+}
+
+.feed-label {
+  color: var(--color-black);
+}
+
+.review-text {
+  padding: 10px;
+  border-radius: 7px;
+  background: var(--color-white);
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+}
+
+
+.form-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--color-black);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--color-black);
+  outline: none;
+  background: transparent;
+}
+
+.form-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--color-black);
+  pointer-events: none;
+  transition: .5s;
+}
+
+.form-box .user-box input:focus~label,
+.form-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: var(--color-black);
+  font-size: 12px;
+}
+
+.form-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--color-black);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-input {
+  border-radius: 4px;
+  color: var(--color-black);
+  padding: 10px;
+  border: 1px solid var(--color-black);
+  background-color: var(--color-white);
+  width: 120px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid black;
+}
+
+.name-input:focus{
+  border-bottom: 1.5px solid black;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1.5px solid black;
+}
+
+.btn{
+  margin-top:10px;
+  transition: var(--transition);
+}

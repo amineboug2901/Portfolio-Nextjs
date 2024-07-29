@@ -1,0 +1,194 @@
+.wrapper {
+  /* min-height: 2; */
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 6vw;
+  display: flex;
+  z-index: 1; /* Assurez-vous que ce z-index n'est pas trop bas */
+  align-items: center;
+  gap: 10vw;
+  justify-content: space-between;
+  /* background: var(--color-white); */
+  margin: 0 0;
+  overflow: -moz-hidden-unscrollable;
+  position: relative;
+
+  background-image: linear-gradient(
+    to top,
+    rgb(9, 32, 63) 0%,
+    rgb(83, 120, 149) 100%
+  ) !important;
+}
+
+.title-container {
+  margin-bottom: 4vw;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.4vw;
+  color: white;
+}
+
+.wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.wrapper ul li {
+  font-size: 18px;
+}
+
+.wrapper ul span {
+  font-size: 16px;
+  padding: 0px 4px;
+}
+
+.wrapper .form-title {
+  font-size: 18px;
+}
+
+.wrapper .form-title h2 {
+  color: white;
+}
+
+.wrapper .box-r {
+  position: relative;
+  margin-top: 30vw;
+}
+
+.wrapper .box-r .form-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  padding: 2rem 1rem;
+}
+
+/* .wrapper .box-r:before {
+    content: '';
+    position: absolute;
+    top: 30vw;
+    left: 30px;
+     background-color: wheat;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+} */
+
+.box-r:after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: -8%;
+  bottom: 55%;
+  left: -5%;
+  /* background-image: url(.../assets/dots.png); */
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+.wrapper .form-box h2 {
+  font-size: 22px;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.wrapper .one-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wrapper .box-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0rem;
+  border-bottom: 1px solid #fff;
+  border-radius: 1px;
+}
+
+.wrapper .box-input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.66rem;
+}
+
+.wrapper .box-input textarea,
+.wrapper .box-input input {
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.wrapper .box-input textarea {
+  padding-left: 1rem;
+  margin-top: 0.351rem;
+}
+
+.wrapper .box-input textarea::placeholder,
+.wrapper .box-input input::placeholder {
+  /* color: #ffffff; */
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.btn-send {
+  background-color: #fffefe; /* Couleur initiale du bouton */
+  color: #0b0b0b;
+  padding: 0.75rem 1rem;
+  border: none;
+  cursor: pointer; /* Ajoutez un curseur pour indiquer que le bouton est cliquable */
+  z-index: 3; /* Assurez-vous que le z-index est suffisamment élevé */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Ajoutez une transition pour un effet doux */
+}
+
+.btn-send:hover {
+  background-color: #f0f0f0; /* Couleur de fond lorsque la souris survole le bouton */
+  color: blue; /* Couleur du texte lorsque la souris survole le bouton */
+}
+
+.btn-send:active {
+  background-color: #e0e0e0; /* Couleur de fond lorsque le bouton est cliqué */
+}
+
+@media (max-width: 810px) {
+  .wrapper {
+    height: 140vh;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .wrapper {
+    padding-bottom: 2vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .box .box-r {
+    margin-top: 30vh;
+  }
+}

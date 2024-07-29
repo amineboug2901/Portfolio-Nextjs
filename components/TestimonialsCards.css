@@ -1,0 +1,37 @@
+.card-cont{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 32px;
+    width: 31vw;
+    background-color: gray;
+    height: fit-content;
+    box-shadow: var(--shadow-active);
+    background: var(--color-white);
+    border: 1px solid var(--color-black);
+    --transition: all 500ms ease;
+    border-radius:  0% 100% 0% 100% / 98% 0% 100% 2%  ;
+    border-radius: 32px;
+}
+
+ p{
+    text-decoration: bold;
+    color: var(--color-black);
+}
+
+.name{
+    text-decoration: underline;
+}
+
+.date{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+@media (max-width:1050px) {
+    .card-cont{
+        justify-content: center;
+        width: 100%;
+    }
+}
