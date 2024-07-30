@@ -1,58 +1,53 @@
-# Portfolio Website
+# $\color{red}{\text{Site Web de Portfolio}}$
+Il s'agit d'un site Web de portfolio construit avec Next.js, Le projet inclut des fonctionnalités d'inscription et de connexion, et Redux est utilisé pour la gestion de l'état.
 
-This is a portfolio website built using Next.js, converted from a React.js application. The project includes signup and login functionality, and Redux is used for state management.
-
-## Table of Contents
-
-- Getting Started
-- Prerequisites
+## $\color{blue}{\text{Table des matières}}$
+- Commencer
+- Conditions préalables
 - Installation
-- Running the Project
-- Tech Stack
-- Project Structure
-- Contributing
-- License
+- Pilotage du projet
+- Pile technologique
+- Structure du projet
+- Contribuer
 
-## Getting Started
 
-Follow these instructions to set up and run the project on your local machine for development and testing purposes.
+## $\color{blue}{\text{Commencer}}$
+Suivez ces instructions pour configurer et exécuter le projet sur votre ordinateur local à des fins de développement et de test.
 
-### Prerequisites
+### $\color{blue}{\text{Conditions préalables}}$
+- Node.js (version >= 20)
+- npm 
 
-- Node.js (version >= 12)
-- npm or yarn
+### $\color{blue}{\text{Installation}}$
+1. Clonez le dépôt : `git clone <repository_url>` puis `cd portfolio-website`
+2. Installez les dépendances : `npm install` 
 
-### Installation
 
-1. Clone the repository: `git clone <repository_url>` and then `cd portfolio-website`
-2. Install the dependencies: `npm install` or `yarn install`
+## $\color{blue}{\text{Exécuter le projet}}$
+1. Démarrez le serveur de développement : `npm run dev` ou 
+2. Ouvrez votre navigateur et accédez à `http://localhost:3000` pour voir l'application en cours d'exécution.
 
-## Running the Project
+### $\color{blue}{\text{Bâtiment pour la production}}$
+Pour créer une version de production, exécutez : `npm run build` 
 
-1. Start the development server: `npm run dev` or `yarn dev`
-2. Open your browser and navigate to `http://localhost:3000` to see the application running.
+### $\color{blue}{\text{Démarrage du serveur de production}}$
+Pour démarrer l'application en mode production, exécutez : `npm start` 
 
-### Building for Production
+## $\color{blue}{\text{Pile technologique}}$
+- Framework : Next.js
+- Gestion de l'état : Redux
+- CSS : Tailwind CSS
+- Authentification : Pages d'inscription et de connexion personnalisées
 
-To create a production build, run: `npm run build` or `yarn build`
+## $\color{blue}{\text{Contribuer}}$
+Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
 
-### Starting the Production Server
+1. Forkez le dépôt.
+2. Créez une nouvelle branche : `git checkout -b feature/YourFeature`
+3. Apportez vos modifications et validez-les : `git commit -m 'Ajouter une fonctionnalité'`
+4. Poussez vers la branche : `git push origin feature/YourFeature`
+5. Créez une nouvelle Pull Request.
 
-To start the application in production mode, run: `npm start` or `yarn start`
-
-## Tech Stack
-
-- Framework: Next.js
-- State Management: Redux
-- CSS: Tailwind CSS
-- Authentication: Custom Signup and Login pages
-
-## Contributing
-
-If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/YourFeature`
-3. Make your changes and commit them: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/YourFeature`
-5. Create a new Pull Request.
+## $\color{blue}{\text{Contact}}$
+#### ✅ Nom : Bouguettaya Amine
+#### ✅ Email : aminebouguettaya2021@gmail.com
